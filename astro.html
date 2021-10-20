@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+	    <!--    <object type="text/html" data="incl.html"></object>-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <!--<link rel="stylesheet" href="bootstrap.bundle.min.js/bootstrap.bundle.js">-->
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            $(function () {
+              $('[data-toggle="popover"]').popover()
+            })
+        </script>
+        <script src="quiz.js"></script>
+        <title>My Area of Interest</title>
+    </head>
+    <body>
+    	<nav id="topright">
+          <a href="cs50.html">CS50</a>
+			    <a href="hobbies.html">Hobbies</a>
+			    <a href="astro.html">Interest</a>
+          <a href="index.html"><i style="font-size:36px" class="fa">&#xf015;</i></a>
+      </nav>
+
+        <div class="jumbotron">
+            <h1 class="display-1">Astronomy!</h1>
+            <h3 class="jtn"><br>My area of interest (not the bank's interest)</h3>
+            <hr class="my-4">
+        </div>
+
+        <!-- https://getbootstrap.com/docs/4.5/components/dropdowns/ -->
+        <div class="split left">
+          <div class="centered">
+            <h1>Fact time</h1>
+            <img src="https://cdn.pixabay.com/photo/2011/12/14/12/23/solar-system-11111_960_720.jpg" alt="Solar system">
+            <p>From <a href="https://www.nasa.gov/">NASA</a></p>
+            <ul>
+              <li>Better stick with a rubber ducky - Saturn is the only planet in our solar system that is less
+              dense than water. It could float in a bathtub if anybody could build a bathtub big enough.</li>
+              <li>Biggest and smallest! - Ceres is the largest, most massive body in the main asteroid
+              belt between Mars and Jupiter, totaling about a third of the total mass of the entire belt. But Ceres is the smallest of the
+              dwarf planets, which include Pluto and Eris, and the only dwarf planet that resides in the asteroid belt.</li>
+              <li>Forget the socks, bring a hat - If you could stand at the Martian equator, the temperature at your
+              feet would be like a warm spring day, but at your head it would be freezing cold!</li>
+              <li>Chill out! - Craters at the Moon’s south pole may be the frostiest locale
+              in the entire solar system. In the permanently shadowed crater floors, “daytime” temperatures may never rise above
+              minus 238 degrees Celsius (minus 397 degrees Fahrenheit).</li>
+              <li>Easy does it - A Venus day is approximately 243 Earth days long. The bad news is we would have to wait up to three Earth years for a
+              weekend. That’s because a day on Venus is longer than its year!</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="split right">
+          <div class="centered">
+            <h1>Quiz time</h1>
+            <img src="https://cdn.pixabay.com/photo/2011/12/14/12/17/galaxy-11098_960_720.jpg" alt="Nebula">
+            <p>From <a href="https://www.space.com/">Space.com</a></p>
+            <ol>
+            <li><h2>What is the Great Red Spot?</h2>
+                <button id="hubble_1">A smudge on hubble's telescope</button>
+                <button id="saturn_1">A storm on Saturn</button>
+                <button id="jupiter_1">A storm on Jupiter</button>
+                <p id="p1"></p></li>
+            <li><h2>How much would a 150-pound person weigh on mars?</h2>
+                <button id="ans21">57 pounds</button>
+                <button id="ans22">79 pounds</button>
+                <button id="ans23">31 pounds</button>
+                <p id="p2"></p></li>
+            <li><h2>How long is a day on saturn?</h2>
+                <button id="ans31">24 hours</button>
+                <button id="ans32">76 hours 54 minutes</button>
+                <button id="ans33">10 hours 47 minutes</button>
+                <p id="p3"></p></li>
+            <li><h2>Which planet is hot enough to melt lead?</h2>
+                <button id="ans41">Uranus</button>
+                <button id="ans42">Venus</button>
+                <button id="ans43">Mars</button>
+                <p id="p4"></p></li>
+            <li><h2>Which planet has the highest mountain and deepest valley of the solar system?</h2>
+                <button id="ans51">Mars</button>
+                <button id="ans52">Saturn</button>
+                <button id="ans53">Earth</button>
+                <p id="p5"></p></li>
+            </ol>
+          </div>
+        </div>
+
+		  <nav id="bottomleft">
+			    <a href="https://cs50.harvard.edu/x/2021/psets/8/homepage/"><i style="font-size:36px" class="fa">&#xf129;</i></a>
+          <a href="https://en.wikipedia.org/wiki/October_1"><i style="font-size:36px" class="fa">&#xf1fd;</i></a>
+          <a href="https://www.linkedin.com/in/sreshta-r/"><i style="font-size:36px" class="fa">&#xf08c;</i></a>
+          <a tabindex="0" class="btn btn-lg" role="button" data-toggle="popover" data-trigger="focus"
+          title="Thank you!" data-content="My page, isn't it amazing? To good taste!"><i style="font-size:36px" class="fa">&#xf087;</i></a>
+      </nav>
+
+    </body>
+</html>
+
+
